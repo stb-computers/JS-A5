@@ -1,4 +1,6 @@
-﻿//Tanveer Ahmed  WM11684
+//Tanveer Ahmed  
+//Reg# WM11684
+// Mobile# 03452021001
 
 //**************************
 //******* CHAPTER-1 ********
@@ -47,7 +49,7 @@ alert("I am trying to learn from the book " + book);
 
 document.write("Yah! I can write HTML content through JavaScript.");
 
-alert("“▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬”");
+alert("�???????????????????????�");
 
 
 //**************************
@@ -476,5 +478,222 @@ if (time>=0 && time<1200) alert("Good Morning")
 else if (time>=1200 && time<1700) alert("Good Afternoon") 
 else if (time>=1700 && time<2100) alert("Good Evening") 
 else if (time>=2100 && time<2359) alert("Good Night") 
+
+
+
+
+
+
+
+
+//**************************
+//**** CHAPTER-21 to 25 ****
+//**************************
+
+
+
+
+//Q-1
+
+var firstName = prompt("Enter your first name:")
+var lastName = prompt("Enter your last name:")
+document.write (firstName + " " + lastName)
+
+//Q-2
+var phoneModel = prompt("Enter mobile phone model name:")
+document.write ("My favorite phone is " + phoneModel )
+document.write ("<br> Length of string is " + phoneModel.length)
+
+
+//Q-3
+var str1 = "pakistani"
+document.write ("string : " + str1)
+document.write ("<br>index of 'n' is " + str1.indexOf('n') )
+
+
+//Q-4
+var str1 = "Hello World"
+document.write ("string : " + str1)
+document.write ("<br>Last index of 'l' is " + str1.lastIndexOf('l') )
+
+
+//Q-5
+var str1 = "pakistani"
+document.write ("string : " + str1)
+document.write ("<br>character at index3 : " + str1.charAt(3))
+
+//Q-6
+var firstName = prompt("Enter your first name:")
+var lastName = prompt("Enter your last name:")
+document.write (firstName.concat("Welcome! ",lastName))
+
+//Q-7
+var cityName = "hyderabad"
+document.write ("city : " + cityName)
+document.write ("<br> after replacement : " + cityName.replace("hyder", "islam"))
+
+//Q-8
+var message = "Ali and Sami are best friends. They play cricket and football together."
+document.write ( message.replace(/and/g,"&"))
+
+//Q-9
+var no = 472
+document.write("Value :" + no)
+document.write("<br>Type : string")
+document.write("<br>Value :" + parseInt(no))
+document.write("<br>Type : integer")
+
+//Q-10
+var str1 = prompt("Write text:")
+document.write (str1.toUpperCase())
+
+//Q-11
+var str1 = prompt("Write text:")
+document.write (str1.charAt(0).toUpperCase() + str1.substr(1).toLowerCase())
+
+
+//Q-12
+var no = 35.36
+document.write("Number :" + no)
+document.write("<br>String : " + no.toString().replace(".","") )
+
+//Q-13
+var userName = prompt("Enter user name:");
+if (    userName.search("!")>0 
+        || userName.search(",")>0
+        || userName.search(".")>0
+        || userName.search("@")>0 ) {
+    document.write ("invalid user name");
+}  
+
+//Q-14
+var A = ["cake", "apple pie", "cookie", "chips", "patties"]
+var product = prompt("Welcome to ABC backery, which product you want?")
+var foundIndex = -1
+for (var i = 0; i <= 4; i++) {
+     if (product.toLowerCase() === A[i].toLowerCase() ) {
+        foundIndex=i
+     }
+     }
+if (foundIndex != -1) {
+    alert(product + " is available at index " + foundIndex);
+
+} else {
+    alert(product + " is not available in our backery");
+
+}
+
+
+//Q-15
+
+var password = prompt("Enter password:")
+var validChar= true 
+
+if ( password.length < 7 ) {
+    alert("invalid length")
+} else 
+{
+
+    for (i=0; i < password.length;  i++)
+    {
+
+        if 
+        (       ( password.charCodeAt(i) >= 65 &&  password.charCodeAt(i) <=90 )
+            || ( password.charCodeAt(i) >= 97 &&  password.charCodeAt(i) <=122 )
+            || ( password.charCodeAt(i) >= 48 &&  password.charCodeAt(i) <=57 )
+        )
+        {
+            validChar= true
+        } else {
+            validChar = false
+            break
+        }
+    }
+
+}
+
+if (validChar == false) {
+    alert("Invalid character")
+}
+
+if ( password.charCodeAt(0) >= 48 &&  password.charCodeAt(0) <=57 ){
+    alert("Password can not begin with number. Please provide valid password")
+} 
+
+
+
+//Q-16
+
+//Q-17
+var str1 = prompt("Enter string:")
+document.write("Last character of input is : " + str1.charAt(str1.length-1))
+
+
+//Q-18
+
+var text="The quick brown fox jumps over the lazy dog"
+var count=0
+for (var i = 0; i < text.length; i++) {
+    if (text.slice(i, i + 3).toLowerCase() === "the") {
+        count++;
+    }
+}
+document.write(text)
+document.write("<br>There are " + count + " occurance(s) of word 'the'" )
+
+
+
+//Q-19
+
+var text = "University of Karachi";
+var i=0;
+for (i=0; i < text.length; i++ ) {
+document.write( "<br>" + text.slice(i,i+1) );
+}
+
+
+
+
+//**************************
+//**** CHAPTER-26 to 30 ****
+//**************************
+
+//Q-1
+
+var no = prompt("Enter any number:") 
+document.write("Number " + no)
+document.write("<br>")
+document.write("round " + Math.round(no))
+document.write("<br>")
+document.write("ceil " + Math.ceil(no))
+document.write("<br>")
+document.write("floor " + Math.floor(no))
+
+//Q-2
+var no = prompt("Enter any number:") 
+document.write("Number " + no)
+document.write("<br>")
+document.write("round " + Math.round(no))
+document.write("<br>")
+document.write("ceil " + Math.ceil(no))
+document.write("<br>")
+document.write("floor " + Math.floor(no))
+
+
+//Q-3
+var no = prompt("Enter any number:") 
+document.write("Number " + no)
+document.write("<br>")
+document.write("absolute " + Math.abs(no))
+
+
+//Q-4
+
+document.write(Math.abs( Math.round( (Math.random()*10) - 6)))
+document.write("<br>")
+document.write(Math.abs( Math.round( (Math.random()*10) - 6)))
+
+
+
 
 
